@@ -1,16 +1,26 @@
-﻿namespace ListasSimplementeLigadas
+﻿using System.ComponentModel;
+
+namespace ListasSimplementeLigadas
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Nodo nodoA = new Nodo();
-            nodoA.Dato = "Hola";
+            Lista lista = new Lista();
 
-            Nodo nodoB = new Nodo();
-            nodoB.Dato = "Mundo";
+            lista.Agregar("A");
 
-            Console.WriteLine(nodoA.Dato);
+            lista.Agregar("B");
+            lista.Agregar("C");
+            lista.Agregar("D");
+            lista.Agregar("E");
+
+            Console.WriteLine(lista.ObtenerValores());
+
+            lista.Eliminar("C");
+
+            Console.WriteLine();
+            Console.WriteLine(lista.ObtenerValores());
         }
     }
 }
