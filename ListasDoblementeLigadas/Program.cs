@@ -25,20 +25,17 @@
             Console.WriteLine("Lista después de eliminar 'C':");
             Console.WriteLine(lista.ObtenerValores());
 
-            // Eliminar un elemento de la lista
-            lista.Eliminar("A");
-
-            // Imprimir la lista después de eliminar "C"
-            Console.WriteLine("Lista después de eliminar 'A':");
-            Console.WriteLine(lista.ObtenerValores());
-
             // Buscar un elemento en la lista
             Console.WriteLine("Resultado de buscar 'E':");
             Console.WriteLine(lista.Buscar("E"));
 
-            // Agregar elementos a la lista
-            lista.Agregar("F");
+            lista.Eliminar("A");
+            lista.Eliminar("E");
             // Imprimir los valores de la lista
+            Console.WriteLine(lista.ObtenerValores());
+
+            lista.Agregar("F");
+            lista.Agregar("G");
             Console.WriteLine(lista.ObtenerValores());
         }
     }
