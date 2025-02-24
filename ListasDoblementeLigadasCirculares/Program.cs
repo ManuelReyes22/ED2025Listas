@@ -28,6 +28,15 @@
             // Buscar un elemento en la lista
             Console.WriteLine("Resultado de buscar 'E':");
             Console.WriteLine(lista.Buscar("E"));
+
+            lista.Eliminar("A");
+            lista.Eliminar("E");
+            // Imprimir los valores de la lista
+            Console.WriteLine(lista.ObtenerValores());
+
+            lista.Agregar("F");
+            lista.Agregar("G");
+            Console.WriteLine(lista.ObtenerValores());
         }
     }
 }

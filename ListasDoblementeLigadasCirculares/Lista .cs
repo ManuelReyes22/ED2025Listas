@@ -60,14 +60,14 @@ namespace ListasDoblementeLigadasCirculares
         {
             if (EstaVacio()) return null;
             Nodo? nodoActual = _nodoInicial;
-            while (nodoActual != _nodoInicial);
+            do 
             {
                 if (nodoActual.Dato == dato)
                 {
                     return nodoActual; // Retorna el nodo si se encuentra
                 }
                 nodoActual = nodoActual.Siguiente;
-            } 
+            }while (nodoActual != _nodoInicial);
             return null; // Retorna null si no se encuentra el dato
         }
 
