@@ -71,7 +71,6 @@ namespace ListasSimplementeLigadasCirculares
         public void Eliminar(string dato)
         {
             if (EstaVacio()) return;
-
             Nodo nodoActual = _nodoInicial;
             Nodo nodoAnterior = _nodoFinal;
 

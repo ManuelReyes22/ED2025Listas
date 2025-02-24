@@ -74,6 +74,8 @@ namespace ListasDoblementeLigadasCirculares
         // Método para eliminar un nodo con un valor específico de la lista
         public void Eliminar(string dato)
         {
+            if (EstaVacio()) return;
+
             Nodo? nodoAEliminar = Buscar(dato);
             if (nodoAEliminar != null)
             {
@@ -102,6 +104,8 @@ namespace ListasDoblementeLigadasCirculares
         // Método para obtener una representación en cadena de los valores de la lista
         public string ObtenerValores()
         {
+            if (EstaVacio()) return string.Empty;
+
             StringBuilder datos = new StringBuilder();
             Nodo? nodoActual = _nodoInicial;
             do

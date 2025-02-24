@@ -107,6 +107,8 @@ namespace ListasSimplementeLigadas
         // Obtiene los valores almacenados en la lista como una cadena de texto
         public string ObtenerValores()
         {
+            if (EstaVacio()) return string.Empty;
+
             StringBuilder datos = new StringBuilder();
             Nodo nodoActual = _nodoInicial;
 
