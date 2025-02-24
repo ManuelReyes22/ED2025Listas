@@ -45,7 +45,6 @@ namespace ListasSimplementeLigadas
         // Busca un nodo en la lista que contenga el dato especificado
         public Nodo? Buscar(string dato)
         {
-            int cont = 0;
             if (!EstaVacio())
             {
                 Nodo nodoActual = _nodoInicial;
@@ -53,7 +52,6 @@ namespace ListasSimplementeLigadas
                 // Se recorre la lista buscando el dato
                 while (nodoActual.Siguiente != null)
                 {
-                    cont++;
                     nodoActual = nodoActual.Siguiente;
 
                     if (nodoActual.Dato == dato)
